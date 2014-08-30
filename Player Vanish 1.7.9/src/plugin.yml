@@ -1,0 +1,15 @@
+name: PlayerVanish
+main: com.name.vanish.PlayerVanish
+version: 3.0
+author: xManfro
+description: >
+             PlayerVanish is an extremely simple player vanish plugin that only requires two commands! 
+             Use /pv help for the commands! - This plugin is designed for 1.7.9
+commands:
+ pv:
+    description: Use /pv help for all commands.
+    aliases: [playervanish]
+    
+
+
+    

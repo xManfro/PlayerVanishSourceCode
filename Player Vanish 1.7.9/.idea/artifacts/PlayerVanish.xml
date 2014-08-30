@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PlayerVanish">
+    <output-path>$PROJECT_DIR$/out/artifacts/PlayerVanish</output-path>
+    <root id="archive" name="PlayerVanish.jar" />
+  </artifact>
+</component>

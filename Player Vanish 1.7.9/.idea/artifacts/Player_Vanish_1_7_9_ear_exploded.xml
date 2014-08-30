@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="Player Vanish 1.7.9:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Player_Vanish_1_7_9_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Player Vanish 1.7.9/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
