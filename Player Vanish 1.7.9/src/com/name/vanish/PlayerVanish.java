@@ -30,24 +30,11 @@ public class PlayerVanish extends JavaPlugin implements Listener {
 	private static PlayerVanish plugin;
 	public final Logger logger = Logger.getLogger("Minecraft");
 
-	// @EventHandler
-	// public void onJoin(PlayerLoginEvent event) {
-	// Player player = event.getPlayer();
-	// for (Player p : Bukkit.getOnlinePlayers())
-	// player.hidePlayer(p);
-	// player.sendMessage(ChatColor.GRAY + "[" + ChatColor.RED
-	// + getConfig().getString("prefix") + ChatColor.GRAY + "] "
-	// + ChatColor.GOLD + "Hello " + player.getName()
-	// + ", Players have now been hidden." + ChatColor.DARK_BLUE
-	// + " Use /pv show to show players.");
-	// if (plugin.getConfig().getBoolean("play-sound-effect") == true) {
-	// player.playSound(player.getLocation(), Sound.PORTAL_TRIGGER, 1, 1);
-	// } else if (plugin.getConfig().getBoolean("play-sound-effect") == false) {
-	// Bukkit.broadcastMessage("");
-	// }
-	//
-	// }
 
+	
+	
+
+	@Override
 	public void onEnable() {
 
 		plugin = this;
@@ -62,7 +49,18 @@ public class PlayerVanish extends JavaPlugin implements Listener {
 
 		getConfig().options().copyDefaults(true);
 		saveConfig();
+		
+		if (plugin.getConfig().getString("auto-update") == true){
+			
+		
+		updater = new Updater(this, 82674, this.getFile(), Updater.UpdateType.DEFAULT, false);
 	}
+		else {
+			this.logger.info("[PlayerVanish] Auto-Updating is disabled! To enable it change the configuration to true.")
+		}
+	}
+	
+	
 
 	public void hideAllPlayers(Player player) {
 		if (plugin.getConfig().getBoolean("enable-/pv-hide") == true) {

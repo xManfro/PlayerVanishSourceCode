@@ -7,12 +7,14 @@
 # Change what ever you would like. Only change the text after the colon. 
 # After you save each change you have to reload the server for the changes to take place! 
 # DO NOT
-#	- Delete any text before the colon!
-# 	- Add any text other than text after a colon.
+## - Delete any text before the colon!
+## - Add any text other than text after a colon.
 # ------------------------------------------------------------------------##
 # |							  Permissions!							      |#
 # ------------------------------------------------------------------------##
 # By changing these configurations you will change the text that each of the options control
+auto-update: false
+
 prefix: PlayerVanish
 
 play-sound-effect: true
